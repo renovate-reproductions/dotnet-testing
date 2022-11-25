@@ -9,7 +9,7 @@
   </PropertyGroup>
   
 	<ItemGroup>
-		<PackageReference Include="MinVer" Version="3.0.0" PrivateAssets="All" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
 </Project>

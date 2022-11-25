@@ -2,11 +2,11 @@
   "version": 1,
   "dependencies": {
     "net6.0": {
-      "MinVer": {
+      "Newtonsoft.Json": {
         "type": "Direct",
-        "requested": "[3.0.0, )",
-        "resolved": "3.0.0",
-        "contentHash": "nI92y6XDCQVS18HtP5cByo0lQtlMHcw9kgNAYjIwpmPMtRNc5rHVuPbZV5CSMAh0rJhxNDpNb/n/3R/nf+12pg=="
+        "requested": "[13.0.1, )",
+        "resolved": "13.0.1",
+        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
       }
     }
   }
