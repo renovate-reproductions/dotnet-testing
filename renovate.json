@@ -3,5 +3,22 @@
   "extends": ["config:base"],
   "rebaseWhen": "behind-base-branch",
   "additionalBranchPrefix": "{{packageFileDir}}-",
-  "enabledManagers": ["nuget"]
+  "enabledManagers": ["nuget"],
+  "packageRules": [
+    {
+      "matchPaths": ["three-two-linear/**"],
+      "additionalBranchPrefix": "three-two-linear-",
+      "commitMessageSuffix": "(three-two-linear)"
+    },
+    {
+      "matchPaths": ["three-two-treelike/**"],
+      "additionalBranchPrefix": "three-two-treelike-",
+      "commitMessageSuffix": "(three-two-treelike)"
+    },
+    {
+      "matchPaths": ["two-one-central-versions/**"],
+      "additionalBranchPrefix": "two-one-central-versions-",
+      "commitMessageSuffix": "(two-one-central-versions)"
+    }
+  ]
 }
