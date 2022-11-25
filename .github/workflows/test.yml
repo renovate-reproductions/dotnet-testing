@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: true
+  
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        proj:
+          - three-two-linear
+          - three-two-treelike
+          - two-one-central-versions
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
+        
+    - name: Restore dependencies
+      run: dotnet restore --locked-mode
+      working-directory: ./${{ matrix.proj }}
